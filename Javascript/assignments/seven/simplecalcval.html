@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function check() {
+            if (!isFinite(num1)){
+                alert("Plz enter a number");
+                return false;
+            }
+        }
+        function add() {
+            var num1 = parseInt(document.frm1.num1.value);
+            num1.check();
+            var num2 = parseInt(document.frm1.num2.value);
+            num2.check();
+            var num3 = num1+num2;
+            document.frm1.num3.value = num3;
+        }
+        function sub() {
+            var num1 = parseInt(document.frm1.num1.value);
+            num1.check();
+            var num2 = parseInt(document.frm1.num2.value);
+            num2.check();
+            var num3 = num1-num2;
+            document.frm1.num3.value = num3;
+        }
+        function mul() {
+            var num1 = parseInt(document.frm1.num1.value);
+            num1.check();
+            var num2 = parseInt(document.frm1.num2.value);
+            num2.check();
+            var num3 = num1*num2;
+            document.frm1.num3.value = num3;
+        }
+        function div() {
+            var num1 = parseInt(document.frm1.num1.value);
+            num1.check();
+            var num2 = parseInt(document.frm1.num2.value);
+            num2.check();
+            var num3 = num1/num2;
+            document.frm1.num3.value = num3;
+        }
+    </script>
+</head>
+<body>
+<form name="frm1">
+    NUM1<input type="number" name="num1"><br>
+    NUM2<input type="number" name="num2"><br>
+    RESULT<input type="number" name="num3"><br>
+    <button onclick="add()">Add</button><br>
+    <button onclick="sub()">Sub</button><br>
+    <button onclick="mul()">Mul</button><br>
+    <button onclick="div()">Div</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function display() {
+            index = document.frm1.webs.selectedIndex;
+            alert(document.frm1.webs.options[index].value);
+            alert(document.frm1.webs.options[index].text);
+            location.replace(document.frm1.webs.options[index].text);
+        }
+    </script>
+</head>
+<body>
+<form name="frm1">
+    <select name="webs" onchange="display()">
+        <option value="1">http://1232vv5dfv.com</option>
+        <option value="2">http://amazon.com</option>
+        <option value="3">http://kohls.com</option>
+        <option value="4">http://macys.com</option>
+    </select>
+</form>
+</body>
+</html>

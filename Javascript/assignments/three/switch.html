@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function checkVowel() {
+            var char = document.getElementsByName("char");
+            alert(char[0].value+" is the entered character");
+            switch (char[0].value) {
+                case "a":alert("Entered character is vowel");
+                break;
+                case "e":alert("Entered character is vowel");
+                    break;
+                case "i":alert("Entered character is vowel");
+                    break;
+                case "o":alert("Entered character is vowel");
+                    break;
+                case "u":alert("Entered character is vowel");
+                    break;
+                default: alert("Entered character is not a vowel");
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" required name="char" placeholder="Enter a character">
+    <button onclick="checkVowel()" name="checkbutton">Check</button>
+</form>
+</body>
+</html>

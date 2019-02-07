@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function display() {
+            alert("textbox val is :"+document.forms[0].elements[0].value);
+            alert("Radio val is :"+document.forms[0].elements[1].value);
+            alert("Button val is :"+document.forms[0].elements[2].value);
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+    <input type="text" name="txt1" value="Imcs"><br>
+    <input type="radio" name="rad1" value="1" checked>OK<br>
+    <input type="button" name="btn1" value="Display" onclick="display()">
+</form>
+</body>
+</html>

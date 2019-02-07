@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function add() {
+            var num1 = parseInt(document.frm1.num1.value);
+            var num2 = parseInt(document.frm1.num2.value);
+            var num3 = num1+num2;
+            document.frm1.num3.value = num3;
+        }
+    </script>
+</head>
+<body>
+<form name="frm1">
+NUM1<input type="number" name="num1"><br>
+NUM2<input type="number" name="num2"><br>
+RESULT<input type="number" name="num3"><br>
+<button onclick="add()">Add</button>
+</form>
+</body>
+</html>

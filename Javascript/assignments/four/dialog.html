@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function dispMsg() {
+            num1 = parseInt(prompt("Enter the first number","0"));
+            num2 = parseInt(prompt("Enter the second number"));
+            alert("Sum is : "+(num1+num2));
+        }
+        function closeWin() {
+            res = confirm("do you want to close?");
+            if (res==true)
+            {
+                window.close();
+            }
+        }
+    </script>
+</head>
+<body>
+<button onclick="dispMsg()">Add</button><br>
+<button onclick="closeWin()">Close</button>
+</body>
+</html>

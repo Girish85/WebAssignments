@@ -1,0 +1,23 @@
+h1{
+color: brown;
+    text-align: center;
+}
+table {
+    align-self: center;
+    border: solid white 2px;
+    padding: 5px;
+    width: 60%;
+    height: 60%;
+}
+tr:nth-child(odd){
+    background-color: greenyellow;
+    color: darkred;
+}
+tr:nth-child(even){
+    background-color: deepskyblue;
+    color: green;
+}
+th{
+    background-color: sandybrown;
+    color: black;
+}

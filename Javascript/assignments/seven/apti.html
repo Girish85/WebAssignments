@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script>
+        function check() {
+            var rad1 = document.getElementById("rad1");
+            var rad2 = document.getElementById("rad2");
+            var rad3 = document.getElementById("rad3");
+            var rad4 = document.getElementById("rad4");
+            if (rad1.checked||rad3.checked||rad4.checked)
+                document.writeln("False.\n Correct answer is Trump");
+            else document.writeln("Correct answer");
+        }
+    </script>
+</head>
+<body>
+<h3>Who is the president of America?</h3><br>
+<form name="form11">
+<input name="option" id="rad1" type="radio">Clinton
+<input name="option" id="rad2" type="radio">Trump
+<input name="option" id="rad3" type="radio">Obama
+<input name="option" id="rad4" type="radio">Putin<br>
+<button onclick="check()">Submit</button>
+</form>
+</body>
+</html>

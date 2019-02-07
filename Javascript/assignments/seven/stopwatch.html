@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript">
+        var txtarea = document.getElementById("txt");
+        function start(num1) {
+            txtarea.innerHTML = num1++;
+        }
+    </script>
+</head>
+<body>
+<button onclick="myVar = setTimeout(start(1),100)">Start</button><br>
+<button onclick="clearTimeout(myVar)">Stop</button><br>
+<textarea id="txt" cols="15" rows="10"></textarea>
+</body>
+</html>

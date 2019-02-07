@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function opennewwin() {
+            newwin = window.open("newwin.html","newone","width=300;height=400;toolbar=no");
+        }
+        function closewin() {
+            newwin.close();
+        }
+    </script>
+</head>
+<body>
+<font size="5" color="blue">Main window</font><br>
+<button onclick="opennewwin()">Open</button><br>
+<button onclick="closewin()">Close</button>
+</body>
+</html>

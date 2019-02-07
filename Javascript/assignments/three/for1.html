@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script language="JavaScript">
+        function generate() {
+            var table = document.getElementById("tab");
+            var tr = document.createElement("TR");
+            var th1 = document.createElement("TH");
+            th1.appendChild(document.createTextNode("Numbers"));
+            tr.appendChild(th1);
+            table.appendChild(tr);
+            for (var i = 1;i<=10;i++)
+            {
+                //alert(i);
+                var tr = document.createElement("TR");
+                var td1 = document.createElement("TD");
+                td1.appendChild(document.createTextNode(i));
+                tr.appendChild(td1);
+                table.appendChild(tr);
+            }
+        }
+    </script>
+</head>
+<body>
+<button onclick="generate()">Generate</button>
+<table id="tab" border="1">
+
+</table>
+</body>
+</html>

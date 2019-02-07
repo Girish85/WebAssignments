@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        h1,h3{
+            color: brown;
+        }
+        table{
+            border: dashed deeppink 2px;
+            padding: 5px;
+            width: 30%;
+        }
+        .col1{
+            color: blue;
+        }
+        input,select{
+            color: blueviolet;
+        }
+        .button{
+            width: 240px;
+            height: 30px;
+            background-color: white;
+            font-size: 20px;
+            border: solid blue 2px;
+            border-radius: 5px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<center>
+<h1>Infy Bank</h1>
+<h3>Fund Transfer</h3>
+<table>
+    <tr><td class="col1">Pay TO</td><td><select name="name">
+        <option name="opt" value="jack">Jack</option>
+        <option name="opt" value="Ross">Ross</option>
+    </select> </td></tr>
+    <tr><td class="col1">Pay From (Account No: )</td><td><input type="number" name="accountno" value="102458565"></td></tr>
+    <tr><td class="col1">Amount</td><td><input type="number" name="amount"></td></tr>
+    <tr><td class="col1">Transaction Remark</td><td><textarea name="remarks" rows="1"></textarea> </td></tr>
+    <tr class="colspan"><td colspan="2"><center><button class="button">Tranfer funds</button></center></td> </tr>
+</table></center>
+</body>
+</html>
